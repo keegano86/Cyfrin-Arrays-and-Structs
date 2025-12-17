@@ -4,11 +4,32 @@ pragma solidity ^0.8.31; //solidity versions
 contract SimpleStorage {
     // favoriteNumber gets initialized to 0 if no value
 
-    uint256 public favoriteNumber; //0
+    uint256  myFavoriteNumber; //0
+
+    //uint[] listOfFavoriteNumbers; // [0, 78, 90]
+    struct Person {
+        uint256 favoriteNumber;
+        string name;
+    } 
+
+    Person[] public listOfPeople; // []
+
+    // Person public pat = Person({favoriteNumber: 7, name: "Pat"});
+    // Person public mariah = Person({favoriteNumber: 16, name: "Mariah"});
+    // Person public jon = Person({favoriteNumber: 12, name: "Jon"});
+    // 0. 1. 2
 
     function store(uint256 _favoriteNumber) public {
-        favoriteNumber = _favoriteNumber;
+        myFavoriteNumber = _favoriteNumber;
     }
 
-
+    // view, pure
+    function retrieve() public view returns(uint256){
+        return myFavoriteNumber;
+    }
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        listOfPeople.push(Person(_favoriteNumber, _name));
+        //Person memory newPerson = Person(_favoriteNumber, _name); 
+        // listOfPeople.push()
+    }
 }
