@@ -11,7 +11,7 @@ contract SimpleStorage {
         uint256 favoriteNumber;
         string name;
     } 
-
+    // dynamic array
     Person[] public listOfPeople; // []
 
     // Person public pat = Person({favoriteNumber: 7, name: "Pat"});
@@ -27,6 +27,8 @@ contract SimpleStorage {
     function retrieve() public view returns(uint256){
         return myFavoriteNumber;
     }
+
+    // calldata, memory, storage
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
         listOfPeople.push(Person(_favoriteNumber, _name));
         //Person memory newPerson = Person(_favoriteNumber, _name); 
