@@ -48,6 +48,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "retrieve",
 				"outputs": [
@@ -102,11 +121,11 @@
 	},
 	"sources": {
 		"arrays.structs.sol": {
-			"keccak256": "0x7358a1852a3949e43438c0aead7f01b0e7af6b2632cbd7a85ea371271a4c7846",
+			"keccak256": "0xc79a37a3a5e18e6c79e5bfc4a3927db4bc6be0b0bd97d90e163a7e6793d325a7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b28c3ea847c6c2b9c5a23cf6c04c8757bfec65d3efa054d6467e66b01f519340",
-				"dweb:/ipfs/QmTpfYJdJF7ZBZCu1nRjQfigEFZiVDTAPgyL5mBttupN4F"
+				"bzz-raw://ce77a7fbd9b2fb92442df897db1af5407bf7f3a8438f93045d67094802de214b",
+				"dweb:/ipfs/QmcpZNHefx1eLe4UtYtnAxvkyhcXvZQaPhTHFx4uYTx4Cu"
 			]
 		}
 	},
